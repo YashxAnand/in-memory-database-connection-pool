@@ -16,6 +16,8 @@ public class SqlConnection implements  Connection{
         this.state = ConnectionState.IDLE;
     }
 
+    public void setState(ConnectionState state){this.state = state;}
+
     public static class SqlConnectionBuilder{
         private String url;
         private String database;
